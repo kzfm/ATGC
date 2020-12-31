@@ -104,7 +104,7 @@ module Atgc
         when :tweet
           text = ""
           @stack.each{|c| text += c.chr}
-          httpauth = Twitter::HTTPAuth.new('kerolinq@gmail.com', 'myoglobin')
+          httpauth = Twitter::HTTPAuth.new('*****', '*****')
           client = Twitter::Base.new(httpauth)
           client.update(text)
         end
